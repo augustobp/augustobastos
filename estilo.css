@@ -228,6 +228,16 @@ th {
 
 /*Começo Contato*/
 
+/*Começo Dados*/
+
+.dados p{
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 175px;    
+}
+
+/*Fim Dados*/
+
 @media screen and (min-width:330px) and (max-width:480px){
   body, div{}
 #footer { margin-left:0px;}
