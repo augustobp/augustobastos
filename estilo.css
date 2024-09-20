@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   }
-  
+
 body{
      background:#ffffff;
     margin-top: 20px;
@@ -151,6 +151,16 @@ body{
   font-size: 30px;
 }
 /*Fim Destaque*/
+
+/*Começo Desafios*/
+
+.title3{
+    margin-left: 350px;
+    font-size: 50px;
+    font-family: "Times New Roman", Times;
+}
+
+/*Fim Desafios*/
 
 /*Começo Medlhas*/
 
