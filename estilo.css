@@ -1,0 +1,234 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  }
+  
+body{
+     background:#ffffff;
+    margin-top: 20px;
+}  
+
+
+.header1{
+    width: 900px;
+    height: 140px;
+    margin: 0px auto;
+    background:#9090e2;
+    border-radius: 30px;
+    }
+   
+.header1 h1{
+    display: block; 
+    float:left;
+    }
+     
+.nav ul{ 
+  font-family: 'Times New Roman', Times, serif;
+     list-style:none; 
+     padding-left: 0px;
+     display: block;
+     float: left;
+     margin-left: 200px;	
+     margin-top:60px;	  
+    }
+ 
+.nav li {
+     float:left;
+     margin-left: 25px;
+     }
+     
+.nav a {
+     text-decoration: none;
+     text-transform: uppercase;
+     padding-top: 8px;
+     color:#000000;
+     font-weight: bold;
+     }
+     
+.nav a:hover{
+        border-bottom: 5px solid #685454;
+        border-radius: 8px;
+     }
+
+.nav ul li a.ativa{
+        border-bottom: 5px solid #685454;
+        border-radius: 8px;
+     }
+
+.section1{
+    width: 900px;
+    height: 380px;
+    margin: 0px auto;
+    background:#dadaff;
+    border-radius: 10px;
+    margin-top: 30px;
+    }
+
+.section1 p{
+    margin-left: 50px;
+    font-size: 30px;
+    }
+
+.footer1{
+  width: 900px;
+  height: 100px;
+  margin: 0px auto;
+  background:#8383fc;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+      
+.footer1 h5{
+  margin-left: 275px;
+}
+
+/*Começa Sobre*/
+.section2{
+  width: 900px;
+  height: 600px;
+  margin: 0px auto;
+  background:#dadaff;
+  border-radius: 10px;
+  margin-top: 30px;
+  }
+
+.section2 p{
+  margin-left: 50px;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin: 5px 15px 15px 15px;
+  text-align: justify
+  }
+
+.section2 img{
+  width: 300px;
+  height: 400px;
+  margin: 0px auto;
+  background:#dadaff;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 275px;
+}  
+
+.footer1 img{
+  margin-left: 800px;
+  margin-top: -20px;
+}
+/*Fim Sobre*/
+
+/*Começo Destaque*/
+.section3{
+  width: 900px;
+  height: 180px;
+  margin: 0px auto;
+  background:#dadaff;
+  border-radius: 10px;
+  margin-top: 30px;
+  }
+
+.section3_1{
+  width: 900px;
+  height: 280px;
+  margin: 0px auto;
+  background:#dadaff;
+  border-radius: 10px;
+  margin-top: 30px;
+  }
+  
+.section3_1 p{
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+    
+.section3 p{
+  margin-left: 15px;
+  font-size: 20px;
+  }
+
+.title{
+  margin-left: 330px;
+  font-size: 30px;
+}
+/*Fim Destaque*/
+
+/*Começo Medlhas*/
+
+.div1{
+  background-color:#dadaff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 510px;
+  width: 890px;
+  margin-top: 20px;
+}
+
+.div1 div{
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  margin: 25px 70px 100px  ;
+  text-align: center;
+  border: 1px solid black;
+}
+ 
+.div1 div p{
+  word-wrap: break-word;
+  margin: 5px 5px 5px 5px;
+}
+
+.tabela1{
+  margin-left: 280px;
+  font-size: 20px;
+  color: rgb(0, 0, 0) ;
+  width: 300px;
+  border: 3px #000000 solid;
+  border-collapse: collapse;
+}
+
+.tabela1 td {
+  border: 3px #000000 solid;
+}
+
+.title2{
+  margin-left: 250px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+/*Fim Medalhas*/
+
+
+@media screen and (min-width:330px) and (max-width:480px){
+  body, div{}
+#footer { margin-left:0px;}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+  body, div{}
+  #footer { margin-left:0px;}		
+}	
+
+@media screen and (min-width:820px) and (max-width:1190px){
+  body, div{}
+#footer { margin-left:10px;}
+}
+
+@media screen and (min-width:1024px) and (max-height:1366px){/*ipad-PRO*/
+  #footer { margin-left:110px; margin-top: 10px;}		
+}	
+
+@media screen and (min-width:1280px) and (min-height:800px){
+#footer { margin-left:240px;}
+}
