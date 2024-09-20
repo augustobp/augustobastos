@@ -1,81 +1,71 @@
 <!DOCTYPE html> 
 <html lang="pt-br"> 
 	<head>
-         <title> PETVET- O Amigo do seu Pet- Contato - JS</title>
+         <title>Contato</title>
 	     <meta charset="utf-8"/> 
-		 <meta name="viewport" content="width=device-width, inicial-scale=1"/> 
-		 <link rel="icon"  type="image/jpg"      href="imagens/iconepet.jpg"/> 
-		<link rel="stylesheet" type="text/css" href="estilo.css"> 
-		<script language="javascript" type="text/javascript">
-			function validaclinica() { // inicio da função para validar campos, acionada ao clicar o botão enviar
-			var nome = contato.nome.value;
-			var email = contato.email.value;
-			var assunto = contato.assunto.value;
-		
+		 <link rel="icon"  type="image/jpg"      href="img/foto1.jfif"/> 
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/javascript">
+    function time() {
+        var nome = form1.nome.value;
+        var email = form1.gmail.value; // Alterado para 'gmail'
+        var data = form1.data.value;
 
-			if (nome == "") {
-			   alert('Por favor, Preencha o campo com seu nome!');
-			   contato.nome.focus();
-			return false;
-			}
+        if (nome == "") {
+            alert("Preencha com o seu nome");
+            form1.nome.focus();
+            return false;
+        }
 
-			if (email == "") {
-			   alert('Preencha o campo com seu email');
-			   contato.email.focus();
-			return false;
-			}
+        if (data == "") {
+            alert("Coloque a data");
+            form1.data.focus();
+            return false;
+        }
 
-			if (assunto == "") {
-				alert('Preencha o campo Assunto, por favor!');
-			   contato.assunto.focus();
-			return false;
-			}
-			// Se todas as validações forem válidas, envia os dados do formulário e exibe mensagem sem direcionar tela
-			alert("Dados enviados com sucesso!");
-			contato.reset(); //função JS reset campos
+        if (email == "") { // Alterado para 'email'
+            alert("Coloque o seu Email");
+            form1.gmail.focus();
+            return false;
+        }
 
-		}//FIM FUNÇÃO
-		</script> 
+        return true; // Adicione isso para permitir o envio se tudo estiver correto
+    }
+</script>
+
 	</head>
 	<body>
-       <div id="header">
-            <h1><img src="imagens/logonovo.png"/></h1>
-			 <ul id="nav">
-			    <li><a href="index.html">home</a></li>
-			    <li><a href="clinica.html">clínica</a></li>
-			    <li><a href="servico.html">serviços</a></li>
-			    <li><a href="contato.html" class="ativa">contato</a></li>
-			 </ul>
-	  </div>
-	  	  <div id="section_c">
-			 <div class ="contato">
-			   <h1> Fale conosco!</h1>
-					<form name="contato" action="#" method="post"><!--nome form para validar JS-->
-					<table border="0">
-					    <tr><td> <label>Nome</td></tr>
-					    <tr><td><input type="text " name="nome" id="text1" size="50" placeholder="Preencha aqui o seu nome!" autofocus /></label></td> </tr>   
-					    <tr><td><label>E-mail</td></tr>
-					    <tr><td><input type="email" name="email" id="text2" size="50" placeholder="Preencha aqui o seu email!" autofocus /></label> </td></tr>
-					    <tr> <td> <label>Assunto</td></tr>
-					   <tr><td><input type="text" name="assunto" id="text3" size="50" placeholder="Preencha  aqui o assunto "  autofocus /></label></td> </tr>
-					   <tr>	 <td><textarea  id="textarea" name="textarea "   rows ="10" cols="52"   placeholder="Deixe aqui seu comentário."></textarea></td></label></tr>
-					  <tr> <td><input type="submit"  onclick="return validaclinica()" value="Enviar"></td> </tr>
-			   </table>
-			   </form>
-		   </div>
-		   <div class ="contato1">
-					 <h1>Nosso Endereço</h1>
-					 <p> Avenida Carlos Magno 649 </p>
-					 <p>Jardim Bela Vista </p>
-                         <p> Americana/SP </p>
-					 <p>(19) 3604-8707</p>
-					 <p>petvet2020@gmail.com</p>
+		<header class="header1">
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="dest.html">Destaque</a></li>
+					<li><a href="desa.html" >Desafios</a></li>
+					<li><a href="meda.html">Medalhas</a></li>
+					
+					<li><a href="contato.html"class="ativa">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="section1">
+			<div>
+				<br><br><br><br><br><br><br><br><br>
+				<form class="form1" name="form1" action="rec.html">
+				    Nome: <input type="text" name="nome" placeholder="Coloque seu nome"><br><br>
+        Data: <input type="date" name="data"><br><br>
+        Email: <input type="email" name="gmail" placeholder="Coloque seu email"><br><br>
+				      <textarea cols="25" rows="5" placeholder="deixe seu comentário!!!!!"></textarea><br><br>
+				     <input type="submit" value="Cadastrar" onclick="return time()">
+				     <input type="reset" value="Limpar">
+				</form>
+			</div>	
+		</section>
+		<footer class="footer1">
+			<div>
+				<br><br>
+				<h5><p>Augusto Bastos 2024  - &copyTodos os direitos reservados</p><br>Trabalho acadêmico sem fins lucrativos</h5>
 			</div>
-		</div>	
-	
-	<div id="footer">
-		<p>Augusto Bastos 2024 - &copy Todos os direitos reservados </p>
-	</div>
-	
-	</body>
+		</footer>
+    </body>
 </html>
