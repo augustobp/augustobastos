@@ -8,7 +8,8 @@
 		<script type="text/javascript">
     function time() {
         var nome = form1.nome.value;
-        var email = form1.gmail.value; // Alterado para 'gmail'
+        var email = form1.gmail.value;
+        var nota = form1.nota.value;
         var data = form1.data.value;
 
         if (nome == "") {
@@ -17,15 +18,21 @@
             return false;
         }
 
-        if (data == "") {
-            alert("Coloque a data");
-            form1.data.focus();
+        if (email == "") {
+            alert("Coloque o seu Email");
+            form1.gmail.focus();
             return false;
         }
 
-        if (email == "") { // Alterado para 'email'
-            alert("Coloque o seu Email");
-            form1.gmail.focus();
+        if (nota == "Selecione uma Nota") {
+            alert("Deixe sua nota");
+            form1.nota.focus();
+            return false;
+        }
+
+        if (data == "") {
+            alert("Coloque a data");
+            form1.data.focus();
             return false;
         }
 
@@ -43,7 +50,8 @@
 					<li><a href="dest.html">Destaque</a></li>
 					<li><a href="desa.html" >Desafios</a></li>
 					<li><a href="meda.html">Medalhas</a></li>
-					<li><a href="contato.html" class="ativa">Contato</a></li>
+					
+					<li><a href="contato.html"class="ativa">Contato</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -52,8 +60,18 @@
 				<br><br><br><br><br><br><br><br><br>
 				<form class="form1" name="form1" method="GET" action="rec.html">
 				    Nome: <input type="text" name="nome" placeholder="Coloque seu nome"><br><br>
+				     Email: <input type="email" name="gmail" placeholder="Coloque seu email"><br><br>
+				     Nota:
+				     <select name="nota">
+				         <option>Selecione uma Nota</option>
+				         <option>0</option>
+				         <option>1</option>
+				         <option>2</option>
+				         <option>3</option>
+				         <option>4</option>
+				         <option>5</option>
+				     </select><br><br>
         Data: <input type="date" name="data"><br><br>
-        Email: <input type="email" name="gmail" placeholder="Coloque seu email"><br><br>
 				      <textarea cols="25" rows="5" placeholder="deixe seu comentário!!!!!"></textarea><br><br>
 				     <input type="submit" value="Cadastrar" onclick="return time()">
 				     <input type="reset" value="Limpar">
